@@ -28,11 +28,12 @@ def partitioning(before_list)
 end
 
 def sort(list)
-  if list[0] < list[1] then
-    return [list[0], list[1]]
-  else
-    return [list[1], list[0]]
+  if list[1] < list[0] then
+    tmp = list[1]
+    list[1] = list[0]
+    list[0] = tmp
   end
+  return list
 end
 
 list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].shuffle
