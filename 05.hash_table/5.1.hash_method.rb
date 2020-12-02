@@ -84,6 +84,6 @@ ht.put("barbar", "bar1")
 
 p "== 結果 ===================="
 p ht
-#p "key=hoge  /value=#{ht.get("hoge")}"
-#p "key=fuga  /value=#{ht.get("fuga")}"
-#p "key=barbar/value=#{ht.get("barbar")}"
+p "key=hoge  /value=#{ht.get("hoge")}"
+p "key=fuga  /value=#{ht.get("fuga")}"
+p "key=barbar/value=#{ht.get("barbar")}"
